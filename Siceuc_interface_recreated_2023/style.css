@@ -1,0 +1,315 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    background-image: url('img/UDC-Background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+h1 {
+    color: #333333;
+}
+
+p {
+    color: #666666;
+    font-size: 18px;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #669934;
+    /* establece el color de fondo del encabezado */
+    color: #fff;
+    /* establece el color de texto del encabezado */
+    display: flex;
+    /* convierte el contenedor en un contenedor de flexbox */
+    align-items: center;
+    /* centra verticalmente el contenido */
+    justify-content: center;
+    /* centra horizontalmente el contenido */
+}
+
+header img {
+    height: 100px;
+    border-radius: 0px 0px 80px 80px;
+    /* establece el borde redondeado */
+    background-color: #fff;
+    /* establece el fondo blanco */
+    padding: 2px 50px 10px 50px;
+    /* opcional: agrega un espacio adicional dentro del borde */
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+.container {
+    max-width: 960px;
+    /* agregamos un margen superior al contenido principal */
+    float: left;
+    width: 60%;
+    
+}
+
+  .app_container{
+    margin-left: -120px;
+    margin-top: 80px;
+    float: left;
+    /* agregamos un margen superior al contenido principal */
+   
+  }
+
+  .App{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    height: 420px;
+     border-radius: 15px;
+  }
+
+.form-container {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 80px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px 15px 15px 15px;
+    text-align: center;
+    /* centro el botón */
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.form-container button[type="submit"]:hover {
+    background-color: #4c722d;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    /* centramos los campos de texto */
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border: 1px solid #669934;
+}
+
+.form-group #email {
+    margin: 0 auto;
+    /* hacemos que el margen derecho e izquierdo sea igual */
+}
+
+.form-group #password {
+    margin: 0 auto;
+    /* hacemos que el margen derecho e izquierdo sea igual */
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    max-width: 300px;
+    /* agrega esta línea para limitar el ancho máximo */
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    max-width: 300px;
+    /* agrega esta línea para limitar el ancho máximo */
+}
+
+.form-container label.checkbox {
+    display: block;
+    margin: 20px auto;
+    position: relative;
+    cursor: pointer;
+}
+
+.form-container label.checkbox:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 20px;
+    width: 20px;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+}
+
+.form-container label.checkbox:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 6px;
+    width: 11px;
+    left: 5px;
+    top: 6px;
+    border-left: none;
+    border-top: none;
+    transform: rotate(-45deg);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-container input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.form-container input[type="checkbox"]:checked+label:after {
+    opacity: 1;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #669934;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #669934;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+}
+
+/* Hacer que el contenido se ajuste al ancho del dispositivo */
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Hacer que el texto sea legible en pantallas pequeñas */
+  html {
+    font-size: 16px;
+  }
+  
+  @media (max-width: 767px) {
+    html {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 479px) {
+    html {
+      font-size: 12px;
+    }
+  }
+  
+  /* Ajustar el tamaño de las imágenes y otros elementos según el ancho del dispositivo */
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Hacer que los menús desplegables sean fáciles de usar en pantallas táctiles */
+  .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  }
+  
+  .dropdown-menu > li > a {
+    padding: 10px 15px;
+    display: block;
+  }
+  
+  /* Ajustar los márgenes para evitar que el contenido se corte en pantallas pequeñas */
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
